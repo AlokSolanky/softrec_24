@@ -10,7 +10,11 @@ const NavBar = () => {
     <nav className="w-full bg-black text-white font-medium min-h-[50px] px-6">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-3">
         <Link to="/" className="text-xl font-bold">
-          Logo
+          <img
+            src="/icons/NITT_logo.png"
+            alt="Internet Issue"
+            className="h-[40px] w-[40px] bg-black"
+          />
         </Link>
 
         <ul className="hidden md:flex space-x-8">
@@ -34,7 +38,7 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className="hidden md:block">SOFTREC</div>
+        <div className="max-md:font-extrabold max-md:text-[30px]">SOFTREC</div>
 
         <button
           className="md:hidden text-white"
@@ -70,5 +74,4 @@ const NavBar = () => {
     </nav>
   );
 };
-
 export default NavBar;
