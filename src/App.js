@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <NavBar />
-      <div className="flex-grow bg-red-400">
+      <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/event" element={<Events />} />
