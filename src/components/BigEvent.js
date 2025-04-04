@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
+import "./events.css";
 
 const BigEvent = ({ event }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imageAvailable, setImageAvailable] = useState(false);
   const [isFading, setIsFading] = useState(false);
+
   useEffect(() => {
+    if (!event) return null;
     if (event && event.gallery) {
       setImageAvailable(true);
       const interval = setInterval(() => {
@@ -26,10 +29,6 @@ const BigEvent = ({ event }) => {
       setIsFading(false);
     }, 500);
   };
-
-  if (!event) {
-    return <></>;
-  }
 
   const handlePrev = () => {
     setCurrentImageIndex(

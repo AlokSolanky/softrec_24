@@ -1,11 +1,17 @@
 .events-container {
-  margin-top: 100px;
+  margin-top: 20px;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+}
+.events-container h1,
+.events-container h2,
+.events-container p {
+  margin: 0px;
+  padding: 0px;
 }
 .big-event {
   width: 100%;
@@ -16,6 +22,7 @@
 }
 .big-event > h1 {
   margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 .more-description {
   font-size: large;
@@ -91,12 +98,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
 }
 
 .carousel-image {
-  width: 60%;
-  max-height: 600px;
+  width: 50%;
+  max-height: 400px;
   object-fit: cover;
   background-repeat: no-repeat;
 }
@@ -113,12 +119,18 @@ button {
 
 .previous {
   position: relative;
-  right: -60px;
+  right: -50px;
+  color: white;
+  font: bold;
+  font-size: larger;
 }
 
 .next {
   position: relative;
-  left: -60px;
+  left: -50px;
+  color: white;
+  font: bold;
+  font-size: larger;
 }
 
 button:hover {
@@ -232,6 +244,7 @@ button:hover {
     font-size: medium !important;
   }
 }
+
 @media only screen and (max-width: 1064px) {
   .card-circle > .circle {
     height: 90px;
@@ -264,7 +277,7 @@ button:hover {
     display: none;
   }
   .event-title {
-    font-size: large !important;
+    font-size: medium !important;
   }
   .event-description {
     font-size: small !important;
@@ -272,6 +285,7 @@ button:hover {
   .event-card {
     height: 200px;
     width: 100%;
+    background-color: red;
   }
   .carousel-image {
     width: 80%;
@@ -282,32 +296,37 @@ button:hover {
   .card-container {
     height: 155px;
     width: 90%;
+    background-color: green;
   }
 }
-
+/* 
 @media only screen and (max-width: 488px) {
   .card-circle,
   .connector {
     display: none;
   }
   .event-title {
-    font-size: medium !important;
+    font-size: small !important;
   }
   .event-description {
     font-size: 0.5rem !important;
   }
+  .small-events {
+    margin-top: 10px;
+  }
   .event-card {
     height: 120px;
-    width: 90%;
+    width: 100%;
   }
 
   .carousel-image {
-    width: 180px;
+    width: 300px;
     height: 150px;
     object-fit: cover;
     background-repeat: no-repeat;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    border: 2px solid green;
   }
   .indicator-dot {
     width: 8px;
@@ -338,4 +357,4 @@ button:hover {
   .card-right > img {
     border-radius: 0px 5px 5px 0px;
   }
-}
+} */
