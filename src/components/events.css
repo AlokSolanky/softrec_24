@@ -285,7 +285,6 @@ button:hover {
   .event-card {
     height: 200px;
     width: 100%;
-    background-color: red;
   }
   .carousel-image {
     width: 80%;
@@ -296,10 +295,9 @@ button:hover {
   .card-container {
     height: 155px;
     width: 90%;
-    background-color: green;
   }
 }
-/* 
+
 @media only screen and (max-width: 488px) {
   .card-circle,
   .connector {
@@ -326,7 +324,6 @@ button:hover {
     background-repeat: no-repeat;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    border: 2px solid green;
   }
   .indicator-dot {
     width: 8px;
@@ -357,4 +354,4 @@ button:hover {
   .card-right > img {
     border-radius: 0px 5px 5px 0px;
   }
-} */
+}
