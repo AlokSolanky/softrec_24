@@ -38,8 +38,11 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className="max-md:font-extrabold max-md:text-[30px]">SOFTREC</div>
-
+        <Link to={"https://softrec.nitt.edu"}>
+          <div className="max-md:font-extrabold max-md:text-[30px]">
+            SOFTREC
+          </div>
+        </Link>
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
