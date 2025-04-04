@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import { Home } from "./pages/Home";
-import { Events } from "./pages/Events";
+import Events from "./pages/Events";
 import AboutUs from "./pages/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
