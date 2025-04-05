@@ -1,4 +1,4 @@
-.events-container {
+/* .events-container {
   margin-top: 20px;
   width: 100%;
   min-height: 100vh;
@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 .events-container h1,
 .events-container h2,
 .events-container p {
@@ -15,7 +15,7 @@
 }
 .big-event {
   width: 100%;
-  padding: 10px 50px 0px 50px;
+  padding: 10px 30px 0px 30px;
   color: gray;
   border-bottom: 1px solid gray;
   box-sizing: border-box;
@@ -70,21 +70,6 @@
 .paused {
   animation-play-state: paused;
 }
-
-/* Adding some media queries to make it responsive */
-/* @media (max-width: 768px) {
-  .event-card {
-    min-width: 150px;
-    height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .event-card {
-    min-width: 100px;
-    height: 100px;
-  }
-} */
 
 .gallery {
   color: rgb(150, 150, 150);
@@ -155,14 +140,14 @@ button:hover {
   color: #ffffff;
 }
 
-.small-events {
+/* .small-events {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 .event-card {
   width: 70%;
   height: 250px;
