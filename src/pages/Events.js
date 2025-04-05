@@ -84,7 +84,7 @@ const Events = () => {
 
   return (
     <div
-      className="mt-20px w-[100%] flex items-center justify-space flex-col"
+      className="mt-[20px] w-[100%] flex items-center justify-space flex-col"
       ref={bigEventRef}
     >
       <h1 className="text-4xl font-bold text-center m-0 p-0">Events</h1>
@@ -95,7 +95,11 @@ const Events = () => {
         </div>
       )}
 
-      <SmallEvents events={events} onEventClick={handleEventClick} />
+      <SmallEvents
+        selectedEvent={selectedEvent}
+        events={events}
+        onEventClick={handleEventClick}
+      />
     </div>
   );
 };
